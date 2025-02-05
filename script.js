@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Handle form submission and display summary in modal
+  // Handle form submission: send email via EmailJS then store and show modal
   document.getElementById('scorecardForm').addEventListener('submit', function(e) {
     e.preventDefault();
     let total = 0;
@@ -92,6 +92,15 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Please allocate exactly 100 points across all attributes.');
       return;
     }
+    // Send email via EmailJS (update service/template IDs as needed)
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+        console.log('FAILED...', error);
+      });
+    
+    // Process form data and store submission
     const formData = new FormData(this);
     let submission = {};
     let summaryHTML = "<ul>";
