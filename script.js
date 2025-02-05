@@ -1,4 +1,4 @@
-// script.js
+// scriipt.js
 document.addEventListener("DOMContentLoaded", function() {
   // Update total points dynamically
   const inputs = document.querySelectorAll('input[type="number"]');
