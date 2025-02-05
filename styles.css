@@ -1,0 +1,170 @@
+/* styles.css */
+
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f7f8;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #007BFF;
+}
+header h1 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #007BFF;
+}
+header h2 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  color: #0056b3;
+}
+.instructions {
+  background: #eef;
+  padding: 15px;
+  border-left: 4px solid #007BFF;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.instructions ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid #e1e1e1;
+}
+th {
+  background-color: #007BFF;
+  color: #fff;
+  font-weight: 500;
+}
+td input[type="number"] {
+  width: 80px;
+  padding: 6px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 5px;
+}
+td textarea {
+  width: 100%;
+  padding: 6px;
+  font-size: 0.95em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+/* Info Icon using Unicode fallback */
+.info-icon {
+  display: inline-block;
+  font-size: 1em;
+  margin-left: 5px;
+  cursor: pointer;
+  position: relative;
+}
+.info-icon:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  left: 25px;
+  top: -5px;
+  background: #007BFF;
+  color: #fff;
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 10;
+  font-size: 0.9em;
+  width: 250px;
+  white-space: pre-wrap;
+}
+.total-container {
+  text-align: right;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+.error {
+  color: #c00;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+}
+.submit-btn {
+  display: block;
+  width: 220px;
+  margin: 30px auto;
+  padding: 12px;
+  background-color: #007BFF;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+/* Modal Popup Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+  border-radius: 8px;
+  text-align: center;
+}
+.close-btn {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.close-btn:hover, .close-btn:focus {
+  color: #000;
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  th, td {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+  .submit-btn {
+    width: 90%;
+  }
+}
