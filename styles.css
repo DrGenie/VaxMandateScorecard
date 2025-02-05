@@ -1,4 +1,4 @@
-/* styldses.css */
+/* styles.css */
 
 /* Global Styles */
 body {
@@ -75,13 +75,12 @@ td textarea {
   border-radius: 4px;
   resize: vertical;
 }
-/* Info Icon using Unicode fallback with hover tooltip */
+/* Info Icon using inline SVG with hover tooltip */
 .info-icon {
   display: inline-block;
-  font-size: 1em;
-  margin-left: 5px;
   cursor: pointer;
   position: relative;
+  vertical-align: middle;
 }
 .info-icon:hover::after {
   content: attr(data-tooltip);
