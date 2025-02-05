@@ -16,7 +16,7 @@
       <h1>To mandate or not to mandate?</h1>
       <h2>Public preferences for vaccine mandates in Australia and international comparators: A discrete choice experiment</h2>
       <p>
-        <strong>Brief Background:</strong> Government COVID‑19 vaccine mandates in Australia and internationally have included employment mandates (only vaccinated persons work) and public space mandates (vaccination required for access to events, entertainment, and hospitality venues). This study aims to quantify public preferences and trade‑offs among key features of vaccine mandates.
+        <strong>Brief Background:</strong> Government COVID‑19 vaccine mandates in Australia and internationally have included employment mandates (only vaccinated persons work) and public space mandates (vaccination required for access to events, entertainment, and hospitality venues). This study aims to quantify public preferences and trade‑offs among key features of future vaccine mandates.
       </p>
     </header>
 
@@ -24,7 +24,7 @@
     <div class="instructions">
       <ul>
         <li>Allocate a total of <strong>100 points</strong> among the following attributes to indicate their importance.</li>
-        <li>Higher scores means greater importance when choosing a preferred vaccine mandate.</li>
+        <li>Higher scores indicate greater importance when choosing a preferred vaccine mandate.</li>
         <li>If you do not consider an attribute relevant, please assign it <strong>0 points</strong> so that the total equals 100.</li>
         <li>Provide any feedback or suggestions in the comment box for each attribute.</li>
         <li>If additional features affect your choice, please list them in the "Other" category at the end.</li>
@@ -47,9 +47,8 @@
           <tr>
             <td>
               <strong>Scope of Mandate</strong>
-              <!-- SVG icon for scope -->
-              <span class="info-icon" data-tooltip="Defines who must be vaccinated. 'High-risk occupations only' targets critical roles (e.g. healthcare), reducing disruption. 'All occupations and public spaces' covers everyone for maximum public health benefit, but may be more intrusive.">
-                <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zM8 11c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+              <span class="info-icon" data-tooltip="Defines who must be vaccinated. 'High-risk occupations only' targets individuals in critical roles (e.g. healthcare, border protection), reducing disruption. 'All occupations and public spaces' covers everyone for maximum public health benefit, though it may be seen as more intrusive.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm.75 15h-1.5v-7h1.5v7zm0-9h-1.5V7h1.5v1z"/></svg>
               </span>
             </td>
             <td>
@@ -64,8 +63,8 @@
           <tr>
             <td>
               <strong>Mandate Administration Level</strong>
-              <span class="info-icon" data-tooltip="Indicates who enforces the mandate. Local mandates are tailored to community needs; national mandates provide uniformity; private mandates work within organisations.">
-                <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9v3H3v4h4v6h6v-6h2l1-3h-3V9c0-1.66 1.34-3 3-3s3 1.34 3 3v3h3l1 3h-3v4h4v6h6v-6h4v-4h-2V9c0-3.87-3.13-7-7-7z"/></svg>
+              <span class="info-icon" data-tooltip="Indicates who enforces the mandate. Local mandates are tailored to community needs and often have lower enforcement costs; national mandates provide uniformity; private mandates are used within organisations such as employers or clubs.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9v3H3v4h4v6h6v-6h2l1-3h-3V9c0-1.66 1.34-3 3-3s3 1.34 3 3v3h3l1 3h-3v4h4v6h6v-6h4v-4h-2V9c0-3.87-3.13-7-7-7z"/></svg>
               </span>
             </td>
             <td>
@@ -81,15 +80,15 @@
           <tr>
             <td>
               <strong>Infection Threshold for Mandate Activation</strong>
-              <span class="info-icon" data-tooltip="Specifies the outbreak severity needed to trigger the mandate. Lower thresholds mean early intervention; higher thresholds delay action until the outbreak is severe.">
-                <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span class="info-icon" data-tooltip="Specifies the outbreak severity needed to trigger the mandate. Lower thresholds trigger early intervention; higher thresholds delay action until the outbreak is severe.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
               </span>
             </td>
             <td>
               <strong>50 cases per 100k with 10% weekly increase:</strong> Early trigger.<br>
               <strong>100 cases per 100k with 15% weekly increase:</strong> Moderate trigger.<br>
               <strong>200 cases per 100k with 20% weekly increase:</strong> Late trigger under severe outbreak.<br>
-              <em>Rationale:</em> A moderate threshold balances protection with economic and social disruption.
+              <em>Rationale:</em> A moderate threshold is generally preferred to balance protection with minimal disruption.
             </td>
             <td><input type="number" name="points_threshold" min="0" max="100" required></td>
             <td><textarea name="feedback_threshold" placeholder="Enter your comments here..."></textarea></td>
@@ -98,14 +97,14 @@
           <tr>
             <td>
               <strong>Vaccine Coverage Requirement for Lifting Mandates</strong>
-              <span class="info-icon" data-tooltip="Specifies the percentage of vaccination needed before lifting mandates. A moderate (70%) threshold is usually most acceptable.">
-                <svg viewBox="0 0 24 24"><path d="M12 4C7.589 4 4 7.589 4 12s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm1 13h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span class="info-icon" data-tooltip="Specifies the vaccination percentage required to lift mandates. A moderate (70%) threshold is typically viewed as realistic and acceptable.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 4C7.589 4 4 7.589 4 12s3.589 8 8 8 8-3.589 8-8-3.589-8-8-8zm1 13h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
               </span>
             </td>
             <td>
-              <strong>Low (50%):</strong> Lifting mandates with 50% coverage.<br>
+              <strong>Low (50%):</strong> Mandates lifted with 50% coverage.<br>
               <strong>Moderate (70%):</strong> A balanced threshold ensuring substantial protection.<br>
-              <strong>High (90%):</strong> Requires near‑universal vaccination.<br>
+              <strong>High (90%):</strong> Requires near‑universal vaccination before lifting mandates.<br>
               <em>Rationale:</em> Moderate coverage (70%) strikes a realistic balance between safety and feasibility.
             </td>
             <td><input type="number" name="points_coverage" min="0" max="100" required></td>
@@ -115,15 +114,15 @@
           <tr>
             <td>
               <strong>Incentives for Vaccination</strong>
-              <span class="info-icon" data-tooltip="Provides benefits to encourage vaccination. Options include paid time off or financial subsidies that reduce the private cost.">
-                <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span class="info-icon" data-tooltip="Provides benefits to encourage vaccination. Options include compensatory leave or financial subsidies that reduce personal costs.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
               </span>
             </td>
             <td>
               <strong>No incentives:</strong> No additional rewards.<br>
               <strong>Paid time off for vaccination (1–3 days):</strong> Compensates for lost work time.<br>
               <strong>Government subsidies/discounts on services:</strong> Provides direct financial benefits.<br>
-              <em>Rationale:</em> Incentives lower the opportunity cost and encourage higher uptake.
+              <em>Rationale:</em> Incentives lower the opportunity cost and motivate higher uptake.
             </td>
             <td><input type="number" name="points_incentives" min="0" max="100" required></td>
             <td><textarea name="feedback_incentives" placeholder="Enter your comments here..."></textarea></td>
@@ -132,8 +131,8 @@
           <tr>
             <td>
               <strong>Exemption Policy</strong>
-              <span class="info-icon" data-tooltip="Determines who may opt out of the mandate. Stricter policies (e.g. only medical exemptions) can boost uptake; broader exemptions offer flexibility but might lower overall coverage.">
-                <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 4.992 3.042 9.27 7.438 11.063.544.1.744-.237.744-.527 0-.26-.01-1.124-.015-2.037-3.025.656-3.663-1.456-3.663-1.456-.494-1.255-1.204-1.59-1.204-1.59-.984-.673.075-.66.075-.66 1.087.077 1.662 1.12 1.662 1.12.967 1.66 2.536 1.177 3.152.9.098-.699.38-1.177.691-1.447-2.414-.275-4.953-1.206-4.953-5.367 0-1.186.426-2.155 1.123-2.918-.113-.277-.488-1.386.107-2.888 0 0 .916-.293 3 1.112a10.45 10.45 0 012.737-.367c.93.004 1.867.125 2.737.367 2.083-1.405 3-1.112 3-1.112.597 1.502.222 2.611.109 2.888.7.763 1.122 1.732 1.122 2.918 0 4.172-2.543 5.089-4.966 5.357.391.337.739 1.003.739 2.021 0 1.459-.014 2.635-.014 2.993 0 .292.196.63.75.523C20.96 21.265 24 16.987 24 12 24 5.373 18.627 0 12 0z"/></svg>
+              <span class="info-icon" data-tooltip="Determines who may opt out of the mandate. Stricter policies (only medical exemptions) can boost uptake, whereas broader exemptions add flexibility but might lower overall coverage.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12c0 4.992 3.042 9.27 7.438 11.063.544.1.744-.237.744-.527 0-.26-.01-1.124-.015-2.037-3.025.656-3.663-1.456-3.663-1.456-.494-1.255-1.204-1.59-1.204-1.59-.984-.673.075-.66.075-.66 1.087.077 1.662 1.12 1.662 1.12.967 1.66 2.536 1.177 3.152.9.098-.699.38-1.177.691-1.447-2.414-.275-4.953-1.206-4.953-5.367 0-1.186.426-2.155 1.123-2.918-.113-.277-.488-1.386.107-2.888 0 0 .916-.293 3 1.112a10.45 10.45 0 012.737-.367c.93.004 1.867.125 2.737.367 2.083-1.405 3-1.112 3-1.112.597 1.502.222 2.611.109 2.888.7.763 1.122 1.732 1.122 2.918 0 4.172-2.543 5.089-4.966 5.357.391.337.739 1.003.739 2.021 0 1.459-.014 2.635-.014 2.993 0 .292.196.63.75.523C20.96 21.265 24 16.987 24 12 24 5.373 18.627 0 12 0z"/></svg>
               </span>
             </td>
             <td>
@@ -149,15 +148,15 @@
           <tr>
             <td>
               <strong>Vaccine Effectiveness and Durability</strong>
-              <span class="info-icon" data-tooltip="Shows how well and for how long the vaccine protects. Higher effectiveness/durability means greater internal benefits, potentially reducing the need for strict mandates.">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
+              <span class="info-icon" data-tooltip="Indicates how well and for how long the vaccine protects. Higher effectiveness/durability implies stronger benefits and may reduce the need for strict mandates.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/></svg>
               </span>
             </td>
             <td>
               <strong>Moderate (75% effective for 1 year):</strong> Reflects typical performance with boosters needed.<br>
               <strong>High (95% effective for 3 years):</strong> Offers long‑lasting protection.<br>
-              <strong>Low (55% effective for 6 months):</strong> Indicates frequent breakthroughs and shorter protection.<br>
-              <em>Rationale:</em> Captures the impact of vaccine performance on individual and societal benefits.
+              <strong>Low (55% effective for 6 months):</strong> Indicates frequent breakthroughs.<br>
+              <em>Rationale:</em> Captures the impact of vaccine performance on both individual and societal benefits.
             </td>
             <td><input type="number" name="points_effectiveness" min="0" max="100" required></td>
             <td><textarea name="feedback_effectiveness" placeholder="Enter your comments here..."></textarea></td>
@@ -166,15 +165,15 @@
           <tr>
             <td>
               <strong>Opportunity Cost of Compliance</strong>
-              <span class="info-icon" data-tooltip="Represents the personal economic cost (time, inconvenience) of getting vaccinated. Lower costs encourage uptake; higher costs may require extra incentives.">
-                <svg viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span class="info-icon" data-tooltip="Represents the personal cost (time, inconvenience) of getting vaccinated. Lower costs naturally facilitate uptake, while higher costs may need additional incentives.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm1 17h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
               </span>
             </td>
             <td>
               <strong>Low (A$5):</strong> Minimal inconvenience (e.g. 15 minutes or minimal travel).<br>
-              <strong>Moderate (A$20):</strong> Typical cost in urban settings (e.g. 30 minutes travel/waiting).<br>
+              <strong>Moderate (A$20):</strong> Typical urban cost (e.g. 30 minutes travel/waiting).<br>
               <strong>High (A$50):</strong> Significant cost (e.g. 1 hour travel, wage loss).<br>
-              <em>Rationale:</em> Higher costs may require compensatory measures to ensure high uptake.
+              <em>Rationale:</em> Higher costs may require compensatory measures to achieve high uptake.
             </td>
             <td><input type="number" name="points_opportunity" min="0" max="100" required></td>
             <td><textarea name="feedback_opportunity" placeholder="Enter your comments here..."></textarea></td>
@@ -183,15 +182,15 @@
           <tr>
             <td>
               <strong>Compensation for Adverse Effects</strong>
-              <span class="info-icon" data-tooltip="Shows how the policy mitigates potential side effects. Offering compensation reduces personal risk and can encourage higher uptake.">
-                <svg viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span class="info-icon" data-tooltip="Indicates how the policy mitigates potential side effects. Offering compensation reduces personal risk and may encourage higher uptake.">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
               </span>
             </td>
             <td>
               <strong>No Compensation:</strong> A$0 provided.<br>
               <strong>Partial Compensation (up to A$100):</strong> Offers moderate support for side effects.<br>
               <strong>Full Compensation (up to A$200):</strong> Provides comprehensive coverage.<br>
-              <em>Rationale:</em> Compensation mitigates perceived risk and can increase willingness to vaccinate.
+              <em>Rationale:</em> Compensation mitigates risk and can increase willingness to vaccinate.
             </td>
             <td><input type="number" name="points_compensation" min="0" max="100" required></td>
             <td><textarea name="feedback_compensation" placeholder="Enter your comments here..."></textarea></td>
