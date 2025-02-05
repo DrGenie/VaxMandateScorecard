@@ -75,7 +75,7 @@ td textarea {
   border-radius: 4px;
   resize: vertical;
 }
-/* Info Icon using inline SVG with hover tooltip */
+/* Info Icon with inline SVG */
 .info-icon {
   display: inline-block;
   cursor: pointer;
