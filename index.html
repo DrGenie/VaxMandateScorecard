@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To mandate or not to mandate? Vaccine Mandate Attributes Scorecard</title>
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts for a professional look -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <h1>To mandate or not to mandate?</h1>
+      <h2>Public preferences for vaccine mandates in Australia and international comparators: A discrete choice experiment</h2>
+      <p>
+        <strong>Brief Background:</strong> Government COVID‑19 vaccine mandates in Australia and internationally have included employment mandates (only vaccinated persons work) and public space mandates (vaccination required for access to events, entertainment, and hospitality venues). This study aims to quantify public preferences and trade‑offs among key features of future vaccine mandates.
+      </p>
+    </header>
+
+    <!-- Instructions Section -->
+    <div class="instructions">
+      <ul>
+        <li>Allocate a total of <strong>100 points</strong> among the following attributes to indicate their importance.</li>
+        <li>Higher scores indicate greater importance when choosing a preferred vaccine mandate.</li>
+        <li>If you do not consider an attribute relevant, please assign it <strong>0 points</strong> so that the total equals 100.</li>
+        <li>Provide any feedback or suggestions in the comment box for each attribute.</li>
+        <li>If additional features affect your choice, please list them in the "Other" category at the end.</li>
+      </ul>
+    </div>
+
+    <!-- Scorecard Form -->
+    <form id="scorecardForm">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 25%;">Attribute</th>
+            <th style="width: 35%;">Levels, Description &amp; Rationale</th>
+            <th style="width: 15%;">Points</th>
+            <th style="width: 25%;">Feedback/Comments</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 1. Scope of Mandate -->
+          <tr>
+            <td>
+              <strong>Scope of Mandate</strong>
+              <span class="info-icon" data-tooltip="Defines who must be vaccinated. 'High‑risk occupations only' targets critical roles (e.g. healthcare, border protection), reducing disruption. 'All occupations and public spaces' covers everyone for maximum public health benefit, but may be more intrusive.">ℹ️</span>
+            </td>
+            <td>
+              <strong>High‑risk occupations only:</strong> Required for individuals in high‑risk roles.<br>
+              <strong>All occupations and public spaces:</strong> Required for everyone working and for accessing public venues.<br>
+              <em>Rationale:</em> Balances targeted intervention against universal coverage.
+            </td>
+            <td><input type="number" name="points_scope" min="0" max="100" required></td>
+            <td><textarea name="feedback_scope" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 2. Mandate Administration Level -->
+          <tr>
+            <td>
+              <strong>Mandate Administration Level</strong>
+              <span class="info-icon" data-tooltip="Indicates who enforces the mandate. Local mandates are tailored to community needs and may have lower enforcement costs; national mandates ensure uniformity; private mandates are used within organizations such as employers or clubs.">ℹ️</span>
+            </td>
+            <td>
+              <strong>Local Mandate:</strong> Enforced by local authorities with tailored rules.<br>
+              <strong>National Mandate:</strong> Uniform enforcement by the central government.<br>
+              <strong>Private Mandate:</strong> Imposed by private organizations (e.g. employers, clubs).<br>
+              <em>Rationale:</em> Reflects differences in enforcement costs, legitimacy, and coverage.
+            </td>
+            <td><input type="number" name="points_admin" min="0" max="100" required></td>
+            <td><textarea name="feedback_admin" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 3. Infection Threshold for Mandate Activation -->
+          <tr>
+            <td>
+              <strong>Infection Threshold for Mandate Activation</strong>
+              <span class="info-icon" data-tooltip="Sets the outbreak severity needed to trigger the mandate. Lower thresholds trigger early intervention; higher thresholds delay action until the outbreak is severe.">ℹ️</span>
+            </td>
+            <td>
+              <strong>50 cases per 100k with 10% weekly increase:</strong> Early trigger.<br>
+              <strong>100 cases per 100k with 15% weekly increase:</strong> Moderate trigger.<br>
+              <strong>200 cases per 100k with 20% weekly increase:</strong> Late trigger under severe outbreak.<br>
+              <em>Rationale:</em> A moderate threshold is generally preferred to balance protection with minimal disruption.
+            </td>
+            <td><input type="number" name="points_threshold" min="0" max="100" required></td>
+            <td><textarea name="feedback_threshold" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 4. Vaccine Coverage Requirement for Lifting Mandates -->
+          <tr>
+            <td>
+              <strong>Vaccine Coverage Requirement for Lifting Mandates</strong>
+              <span class="info-icon" data-tooltip="Specifies the vaccination percentage required to lift mandates. A moderate (70%) threshold is generally viewed as realistic and acceptable.">ℹ️</span>
+            </td>
+            <td>
+              <strong>Low (50%):</strong> Lifting mandates with 50% coverage.<br>
+              <strong>Moderate (70%):</strong> A balanced threshold ensuring substantial protection.<br>
+              <strong>High (90%):</strong> Requires near‑universal vaccination.<br>
+              <em>Rationale:</em> Moderate coverage (70%) strikes a realistic balance between safety and feasibility.
+            </td>
+            <td><input type="number" name="points_coverage" min="0" max="100" required></td>
+            <td><textarea name="feedback_coverage" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 5. Incentives for Vaccination -->
+          <tr>
+            <td>
+              <strong>Incentives for Vaccination</strong>
+              <span class="info-icon" data-tooltip="Provides benefits to encourage vaccination. Options include paid time off or financial subsidies, which reduce the private cost of getting vaccinated.">ℹ️</span>
+            </td>
+            <td>
+              <strong>No incentives:</strong> No additional rewards.<br>
+              <strong>Paid time off for vaccination (1–3 days):</strong> Compensates for lost work time.<br>
+              <strong>Government subsidies/discounts on services:</strong> Provides direct financial benefits.<br>
+              <em>Rationale:</em> Incentives lower opportunity costs and encourage higher uptake.
+            </td>
+            <td><input type="number" name="points_incentives" min="0" max="100" required></td>
+            <td><textarea name="feedback_incentives" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 6. Exemption Policy -->
+          <tr>
+            <td>
+              <strong>Exemption Policy</strong>
+              <span class="info-icon" data-tooltip="Determines who may opt out of the mandate. A stricter policy (e.g. medical exemptions only) can boost overall uptake, whereas broader exemptions offer flexibility but may lower coverage.">ℹ️</span>
+            </td>
+            <td>
+              <strong>Medical exemptions only:</strong> Only those with verifiable health risks can opt out.<br>
+              <strong>Medical and religious exemptions:</strong> Allows opt-outs for both health and religious reasons.<br>
+              <strong>Medical, religious and broad personal belief exemptions:</strong> Permits a wide range of opt‑outs.<br>
+              <em>Rationale:</em> Balances fairness with the need to maximise vaccination uptake.
+            </td>
+            <td><input type="number" name="points_exemption" min="0" max="100" required></td>
+            <td><textarea name="feedback_exemption" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 7. Vaccine Effectiveness and Durability -->
+          <tr>
+            <td>
+              <strong>Vaccine Effectiveness and Durability</strong>
+              <span class="info-icon" data-tooltip="Indicates how well and for how long the vaccine protects. Higher effectiveness and durability mean stronger private benefits and may reduce the need for strict mandates.">ℹ️</span>
+            </td>
+            <td>
+              <strong>Moderate (75% effective for 1 year):</strong> Reflects typical performance with boosters needed.<br>
+              <strong>High (95% effective for 3 years):</strong> Offers long‑lasting protection.<br>
+              <strong>Low (55% effective for 6 months):</strong> Indicates frequent breakthrough infections.<br>
+              <em>Rationale:</em> Vaccine performance affects both individual and societal benefits.
+            </td>
+            <td><input type="number" name="points_effectiveness" min="0" max="100" required></td>
+            <td><textarea name="feedback_effectiveness" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 8. Opportunity Cost of Compliance -->
+          <tr>
+            <td>
+              <strong>Opportunity Cost of Compliance</strong>
+              <span class="info-icon" data-tooltip="Represents the personal economic cost (time, inconvenience) of getting vaccinated. Lower costs facilitate uptake; higher costs may require compensatory incentives.">ℹ️</span>
+            </td>
+            <td>
+              <strong>Low (A$5):</strong> Minimal inconvenience (e.g. 15 minutes, minimal travel).<br>
+              <strong>Moderate (A$20):</strong> Reflects typical urban costs (e.g. 30 minutes travel/waiting).<br>
+              <strong>High (A$50):</strong> Significant cost (e.g. 1 hour travel, wage loss).<br>
+              <em>Rationale:</em> Higher opportunity costs require additional incentives to ensure uptake.
+            </td>
+            <td><input type="number" name="points_opportunity" min="0" max="100" required></td>
+            <td><textarea name="feedback_opportunity" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+          <!-- 9. Compensation for Adverse Effects -->
+          <tr>
+            <td>
+              <strong>Compensation for Adverse Effects</strong>
+              <span class="info-icon" data-tooltip="Shows how the policy addresses potential side effects. Offering compensation reduces the perceived personal risk and may encourage higher uptake.">ℹ️</span>
+            </td>
+            <td>
+              <strong>No Compensation:</strong> A$0 provided.<br>
+              <strong>Partial Compensation (up to A$100):</strong> Offers moderate support for side effects.<br>
+              <strong>Full Compensation (up to A$200):</strong> Provides comprehensive coverage.<br>
+              <em>Rationale:</em> Compensation mitigates concerns over adverse effects, enhancing willingness to vaccinate.
+            </td>
+            <td><input type="number" name="points_compensation" min="0" max="100" required></td>
+            <td><textarea name="feedback_compensation" placeholder="Enter your comments here..."></textarea></td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="total-container">
+        Total Points Allocated: <span id="totalPoints">0</span>/100
+      </div>
+      <div class="error" id="errorMsg" style="display: none;">The total must equal 100 points.</div>
+      <button type="submit" class="submit-btn">Submit Rankings</button>
+    </form>
+    
+    <!-- Modal Popup for Submission Summary -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Thank You!</h2>
+        <p>Your rankings have been submitted. Below is a summary of your allocations:</p>
+        <div id="modalSummary"></div>
+        <button class="submit-btn" id="modalOk">OK</button>
+      </div>
+    </div>
+    
+    <!-- Download Data Button -->
+    <button class="submit-btn" id="downloadData">Download Collected Data</button>
+  </div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
