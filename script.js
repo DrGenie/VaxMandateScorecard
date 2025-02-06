@@ -1,4 +1,4 @@
-// scriipt.js
+// script.js
 document.addEventListener("DOMContentLoaded", function() {
   // Update total points dynamically
   const inputs = document.querySelectorAll('input[type="number"]');
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     totalPointsEl.textContent = total;
     errorMsg.style.display = (total !== 100) ? 'block' : 'none';
   }
+  
   inputs.forEach(input => {
     input.addEventListener('input', updateTotal);
   });
@@ -28,6 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
     modalSummary.innerHTML = summaryHTML;
     modal.style.display = "block";
   }
+  
   closeModal.onclick = function() {
     modal.style.display = "none";
   }
@@ -92,8 +94,8 @@ document.addEventListener("DOMContentLoaded", function() {
       alert('Please allocate exactly 100 points across all attributes.');
       return;
     }
-    // Send email via EmailJS (update service/template IDs as needed)
-    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+    // Send email using EmailJS with provided credentials
+    emailjs.sendForm('service_zp0gsia', 'template_2qu14s5', this)
       .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
       }, function(error) {
