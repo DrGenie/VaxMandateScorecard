@@ -1,40 +1,41 @@
 /* styles.css */
 
-/* Global Styles */
+/* General Styles */
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f4f7f8;
-  color: #333;
+  background-color: #f7f9fc;
   margin: 0;
   padding: 20px;
+  color: #333;
 }
 .container {
-  max-width: 900px;
+  max-width: 800px;
   margin: 0 auto;
-  background: #fff;
-  padding: 30px;
+  background-color: #fff;
+  padding: 25px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 header {
   text-align: center;
   padding-bottom: 20px;
-  border-bottom: 2px solid #007BFF;
+  border-bottom: 2px solid #005f73;
+}
+header h1, header h2 {
+  color: #005f73;
 }
 header h1 {
   font-size: 1.8em;
   margin-bottom: 10px;
-  color: #007BFF;
 }
 header h2 {
   font-size: 1.3em;
   margin-bottom: 20px;
-  color: #0056b3;
 }
 .instructions {
   background: #eef;
   padding: 15px;
-  border-left: 4px solid #007BFF;
+  border-left: 4px solid #005f73;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -43,22 +44,23 @@ header h2 {
   padding-left: 20px;
   list-style-type: disc;
 }
+/* Table Styles */
 table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
 }
 th, td {
-  padding: 12px;
-  text-align: left;
+  border: 1px solid #ccc;
+  padding: 10px;
   vertical-align: top;
-  border-bottom: 1px solid #e1e1e1;
 }
 th {
-  background-color: #007BFF;
-  color: #fff;
+  background-color: #e0f7fa;
+  color: #005f73;
   font-weight: 500;
 }
+/* Input and Textarea */
 td input[type="number"] {
   width: 80px;
   padding: 6px;
@@ -75,27 +77,34 @@ td textarea {
   border-radius: 4px;
   resize: vertical;
 }
-/* Info Icon with inline SVG */
+/* Info Icon Styles */
 .info-icon {
   display: inline-block;
   cursor: pointer;
   position: relative;
+  color: #0a9396;
+  font-size: 16px;
+  margin-left: 5px;
   vertical-align: middle;
 }
 .info-icon:hover::after {
   content: attr(data-tooltip);
   position: absolute;
-  left: 25px;
-  top: -5px;
-  background: #007BFF;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
   color: #fff;
-  padding: 8px;
+  padding: 5px;
   border-radius: 4px;
-  z-index: 10;
-  font-size: 0.9em;
-  width: 250px;
   white-space: pre-wrap;
+  font-size: 12px;
+  opacity: 1;
+  pointer-events: none;
+  width: 240px;
+  text-align: left;
 }
+/* Total and Error */
 .total-container {
   text-align: right;
   font-size: 1.1em;
@@ -107,12 +116,13 @@ td textarea {
   margin-top: 10px;
   text-align: center;
 }
+/* Submit Button */
 .submit-btn {
   display: block;
   width: 220px;
   margin: 30px auto;
   padding: 12px;
-  background-color: #007BFF;
+  background-color: #0a9396;
   color: #fff;
   text-align: center;
   border: none;
@@ -121,7 +131,7 @@ td textarea {
   cursor: pointer;
 }
 .submit-btn:hover {
-  background-color: #0056b3;
+  background-color: #005f73;
 }
 /* Modal Popup Styles */
 .modal {
@@ -155,12 +165,13 @@ td textarea {
   color: #000;
   text-decoration: none;
 }
-@media (max-width: 768px) {
+/* Responsive Styles */
+@media (max-width: 600px) {
   .container {
-    padding: 20px;
+    padding: 15px;
   }
   th, td {
-    font-size: 0.9em;
+    font-size: 14px;
     padding: 8px;
   }
   .submit-btn {
