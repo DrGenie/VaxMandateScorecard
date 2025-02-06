@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
     totalPointsEl.textContent = total;
     errorMsg.style.display = (total !== 100) ? 'block' : 'none';
   }
-  
   inputs.forEach(input => {
     input.addEventListener('input', updateTotal);
   });
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
     modalSummary.innerHTML = summaryHTML;
     modal.style.display = "block";
   }
-  
   closeModal.onclick = function() {
     modal.style.display = "none";
   }
